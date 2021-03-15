@@ -19,4 +19,8 @@ CS 3300 Mobile App Development Project
 3. Link to your own calendar
 4. Data Visualization could be a cool idea(like creating graphs and plots)
 
+# Contributors:
+# Kurtis Lundell		
+# Deanna Andersen
+# Akhil Anand		
 
