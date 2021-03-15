@@ -13,5 +13,10 @@ CS 3300 Mobile App Development Project
 7. Project group creation
 8. Ability for team lead to assign tasks to group members
 
-Stretch Goals
+# Stretch Goals
+1. Add groups for multi department tasks
+2. Predetermined Templates
+3. Link to your own calendar
+4. Data Visualization could be a cool idea(like creating graphs and plots)
+
 
