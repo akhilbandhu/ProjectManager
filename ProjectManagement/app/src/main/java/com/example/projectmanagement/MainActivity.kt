@@ -1,4 +1,4 @@
-package com.example.useraccounts
+package com.example.projectmanagement
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
