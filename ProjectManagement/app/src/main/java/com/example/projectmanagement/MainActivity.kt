@@ -1,10 +1,10 @@
-package com.example.useraccounts
+package com.example.projectmanagement
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.projectmanagement.R
+import com.example.projectmanagementdeanna.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
