@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93c58da6-7045-453d-9636-7371126c2112" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ActualProjectScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ActualProjectScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/AddingTaskScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/AddingTaskScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/HomeScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MyProjectsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MyProjectsScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ProjectSetupScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ProjectSetupScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/SignUpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/SignUpActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_actual_project_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_actual_project_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_my_projects_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_my_projects_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_project_setup_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_project_setup_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1r5d28S1BKtFziM2xeIhBgH5oDE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93c58da6-7045-453d-9636-7371126c2112" name="Default Changelist" comment="" />
+      <created>1618269674886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618269674886</updated>
+    </task>
+    <servers />
+  </component>
+</project>
