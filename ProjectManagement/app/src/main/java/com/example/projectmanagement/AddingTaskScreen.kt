@@ -3,6 +3,9 @@ package com.example.projectmanagement
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+//should allow the head of the group to assign tasks as well
+//should lead to an assign tasks page
+
 class AddingTaskScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
