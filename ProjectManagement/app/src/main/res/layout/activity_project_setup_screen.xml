@@ -5,45 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProjectSetupActivity">
+
     <TextView
         android:id="@+id/projectSetupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Project Setup"
-        android:textSize="38dp"
         android:textColor="@color/teal_700"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="38dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/projectName"
         android:layout_width="322dp"
         android:layout_height="101dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Project Name"
         android:inputType="textPersonName"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintTop_toBottomOf="@+id/projectSetupTitle" />
 
     <Button
-        android:id="@+id/addTask"
+        android:id="@+id/addProject"
         android:layout_width="373dp"
         android:layout_height="121dp"
-        android:text="Add a Task"
+        android:text="Add Project"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintTop_toBottomOf="@+id/projectedDate"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <EditText
+        android:id="@+id/projectedDate"
+        android:layout_width="322dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Projected Completion Date"
+        android:inputType="date"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
