@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProjectSetupActivity">
+    tools:context=".ProjectSetupScreen">
 
     <TextView
         android:id="@+id/projectSetupTitle"
@@ -40,10 +40,22 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectedDate"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:id="@+id/addPeople"
+        android:layout_width="373dp"
+        android:layout_height="121dp"
+        android:text="Add People"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectedDate"
+        app:layout_constraintVertical_bias="0.207" />
 
     <EditText
         android:id="@+id/projectedDate"
@@ -58,6 +70,5 @@
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectName" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
