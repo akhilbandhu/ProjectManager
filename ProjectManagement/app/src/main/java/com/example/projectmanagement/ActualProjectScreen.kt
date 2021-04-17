@@ -43,7 +43,6 @@ class ActualProjectScreen : AppCompatActivity() {
             db.collection("Projects").document(projectDocumentID).collection("Tasks").get().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     for (document in task.result!!) {
-                        //if (document.data["created by"].toString() == myID) {
                         var taskName = document.data["Task Name"].toString()
                         listOfElements.add(taskName)
                         listOfDocuments.add(document.id)
