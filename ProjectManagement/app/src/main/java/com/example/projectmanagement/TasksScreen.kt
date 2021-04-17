@@ -22,5 +22,21 @@ class TasksScreen : AppCompatActivity() {
         var taskName = findViewById<TextView>(R.id.taskTitle)
         var dueDate = findViewById<TextView>(R.id.dueDateTask)
         var addNotes = findViewById<TextView>(R.id.showTaskNotes)
+        var projectDocumentID = intent.getStringExtra("Project Document")
+
+        if (projectDocumentID != null) {
+            db.collection("Projects").document(projectDocumentID).collection("Tasks").get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    for (document in task.result!!) {
+                        if (document.id == intent.getStringExtra("Task Document")){
+                            projectName.text = document.data["Project Name"].toString()
+                            taskName.text = document.data["Task Name"].toString()
+                            dueDate.text = document.data["Due Date"].toString()
+                            //addNotes.text =
+                        }
+                    }
+                }
+            }
+        }
     }
 }
