@@ -21,8 +21,8 @@
 
     <ListView
         android:id="@+id/projectList"
-        android:layout_width="352dp"
-        android:layout_height="514dp"
+        android:layout_width="392dp"
+        android:layout_height="616dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"

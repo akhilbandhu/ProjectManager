@@ -3,8 +3,7 @@ package com.example.projectmanagement
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.*
-
+import android.widget.Button
 
 class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,16 +12,44 @@ class HomeScreen : AppCompatActivity() {
 
         var myProjects = findViewById<Button>(R.id.myProjectsBtn)
         var setUpBtn = findViewById<Button>(R.id.setupBtn)
+        var userNotes = findViewById<Button>(R.id.notesBtn)
 
         myProjects.setOnClickListener(){
             startActivity(Intent(this, MyProjectsScreen::class.java))
         }
 
         setUpBtn.setOnClickListener(){
-            startActivity(Intent(this, ProjectSetupActivity::class.java))
+            startActivity(Intent(this, ProjectSetupScreen::class.java))
+        }
+
+        userNotes.setOnClickListener(){
+            startActivity(Intent(this, UserNotesActivity::class.java))
         }
 
     }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
