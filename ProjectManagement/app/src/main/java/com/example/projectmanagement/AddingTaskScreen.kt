@@ -25,12 +25,13 @@ class AddingTaskScreen : AppCompatActivity() {
         var db = FirebaseFirestore.getInstance()
         var projectTitle = findViewById<TextView>(R.id.projectName)
         projectTitle.text = intent.getStringExtra("Project Title")
+        var documentID = intent.getStringExtra("Document ID")
 
         var addTask = findViewById<Button>(R.id.addTask)
         var tskName = findViewById<EditText>(R.id.taskName)
         var startDate = findViewById<EditText>(R.id.startDate)
         var dueDate = findViewById<EditText>(R.id.dueDate)
-        var taskNotes = findViewById<EditText>(R.id.taskNotes)
+
 
 
         addTask.setOnClickListener(){
@@ -40,15 +41,13 @@ class AddingTaskScreen : AppCompatActivity() {
             task["Date Created"] = Date().toString()
             task["Start Date"] = startDate.text.toString()
             task["Due Date"] = dueDate.text.toString()
-            task["Task Notes"] = taskNotes.text.toString()
-            db.collection("Projects").get()
+            if (documentID != null) {
+                db.collection("Projects").document(documentID).collection("Tasks").add(task)
                     .addOnCompleteListener {
-                        if(it.isSuccessful){
-                            db.collection("Tasks").add(task).addOnCompleteListener {
-                                Toast.makeText(this, "Task added to project", Toast.LENGTH_SHORT).show()
-                            }
-                        }
+                        Toast.makeText(this, "Task was added", Toast.LENGTH_SHORT).show()
+                        finish()
                     }
+            }
         }
     }
 }

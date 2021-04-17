@@ -22,9 +22,9 @@ class ActualProjectScreen : AppCompatActivity() {
         var membersList = intent.getStringArrayListExtra("Members")
 
         var projectTitle = findViewById<TextView>(R.id.projectTitle)
-        var text = intent.getStringExtra("Document ID")
+        var text = intent.getStringExtra("Project Name")
         projectTitle.text = text// project name clicked from list in MyProjectsScreen class
-        var creatorID = intent.getStringExtra("Created By")
+        var projectDocumentID = intent.getStringExtra("Document ID")
 
         var addTsk = findViewById<Button>(R.id.addingTask)
         addTsk.setOnClickListener {
@@ -38,14 +38,14 @@ class ActualProjectScreen : AppCompatActivity() {
         var listOfDocuments = ArrayList<String?>()
 
 
-        db.collection("Projects").get().addOnCompleteListener { it ->
-            if (it.isSuccessful) {
-                db.collection("Tasks").get().addOnCompleteListener() { task ->
+        if (projectDocumentID != null) {
+            db.collection("Projects").document(projectDocumentID).collection("Tasks").get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
                     for (document in task.result!!) {
                         //if (document.data["created by"].toString() == myID) {
                         var taskName = document.data["Task Name"].toString()
                         listOfElements.add(taskName)
-                        listOfDocuments.add(document.id.toString())
+                        listOfDocuments.add(document.id)
                         // adapter
                         var listAdapter: ArrayAdapter<String?> = ArrayAdapter(
                             this,
