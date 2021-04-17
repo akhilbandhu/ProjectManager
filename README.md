@@ -25,5 +25,6 @@ CS 3300 Mobile App Development Project
 # Akhil Anand		
 
 Dependency to add into build.gradle(app) file under the dependencies section for the calendar: compile 'com.github.sundeepk:compact-calendar-view:3.0.0'
+Used this repo: https://github.com/SundeepK/CompactCalendarView
 
 
