@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProjectSetupActivity">
+    tools:context=".ProjectSetupScreen">
 
     <TextView
         android:id="@+id/projectSetupTitle"
@@ -58,6 +58,5 @@
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectName" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
