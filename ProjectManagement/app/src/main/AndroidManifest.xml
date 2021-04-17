@@ -14,7 +14,7 @@
         <activity android:name=".AddingPeopleScreen" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".HomeScreen" />
-        <activity android:name=".ProjectSetupActivity" />
+        <activity android:name=".ProjectSetupScreen" />
         <activity android:name=".ActualProjectScreen" />
         <activity android:name=".AddingTaskScreen" />
         <activity android:name=".MyProjectsScreen" />
