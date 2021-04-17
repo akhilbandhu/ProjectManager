@@ -23,8 +23,10 @@ class MainActivity : AppCompatActivity() {
         var password = findViewById(R.id.loginpwd) as EditText
         signUpButton.setOnClickListener(){
             //this takes you to the other page
-            startActivity(Intent(this, SignUpActivity::class.java
-            ))
+            startActivity(
+                    Intent(this, SignUpActivity::class.java
+                    )
+            )
         }
         loginButton.setOnClickListener(){
             //to be able to sign in

@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectManagement">
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".HomeScreen"/>
-        <activity android:name=".ProjectSetupActivity"/>
-        <activity android:name=".ActualProjectScreen"/>
-        <activity android:name=".AddingTaskScreen"/>
-        <activity android:name=".MyProjectsScreen"/>
+        <activity android:name=".UserNotesActivity"></activity>
+        <activity android:name=".AddingPeopleScreen" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".ProjectSetupActivity" />
+        <activity android:name=".ActualProjectScreen" />
+        <activity android:name=".AddingTaskScreen" />
+        <activity android:name=".MyProjectsScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
