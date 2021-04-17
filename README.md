@@ -24,3 +24,6 @@ CS 3300 Mobile App Development Project
 # Deanna Andersen
 # Akhil Anand		
 
+Dependency to add into build.gradle file:     compile 'com.github.sundeepk:compact-calendar-view:3.0.0'
+
+
