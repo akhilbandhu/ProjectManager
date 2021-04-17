@@ -72,7 +72,7 @@ class CalendarActivity : AppCompatActivity() {
 
     //this will convert the date into timestamp from the database
     fun convertDateToEpoch(date: String): Long{
-        val date = SimpleDateFormat("MM-dd-yyyy").parse(date)
-        return date.time
+        val finalDate = SimpleDateFormat("MM/dd/yyyy").parse(date)
+        return finalDate.time
     }
 }

@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93c58da6-7045-453d-9636-7371126c2112" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ActualProjectScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ActualProjectScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/AddingTaskScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/AddingTaskScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/HomeScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MyProjectsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/MyProjectsScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ProjectSetupScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/ProjectSetupScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/SignUpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/java/com/example/projectmanagement/SignUpActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_actual_project_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_actual_project_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_my_projects_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_my_projects_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_project_setup_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_project_setup_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProjectManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectManagement/app/src/main/res/layout" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,5 +43,11 @@
       <updated>1618269674886</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="221" y="61" key="SettingsEditor" timestamp="1618278423526">
+      <screen x="0" y="25" width="1440" height="800" />
+    </state>
+    <state x="221" y="61" key="SettingsEditor/1440.25.1920.1055/0.25.1440.800@0.25.1440.800" timestamp="1618278423526" />
   </component>
 </project>

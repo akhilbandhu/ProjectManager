@@ -32,7 +32,7 @@ class AddingTaskScreen : AppCompatActivity() {
         var tskName = findViewById<EditText>(R.id.taskName)
         var startDate = findViewById<EditText>(R.id.startDate)
         var dueDate = findViewById<EditText>(R.id.dueDate)
-
+        var taskNotes = findViewById<EditText>(R.id.taskNotes)
 
 
         addTask.setOnClickListener(){
@@ -42,6 +42,7 @@ class AddingTaskScreen : AppCompatActivity() {
             task["Date Created"] = Date().toString()
             task["Start Date"] = startDate.text.toString()
             task["Due Date"] = dueDate.text.toString()
+            task["Task Notes"] = taskNotes.text.toString()
             if (documentID != null) {
                 db.collection("Projects").document(documentID).collection("Tasks").add(task)
                     .addOnCompleteListener {

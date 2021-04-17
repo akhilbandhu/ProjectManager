@@ -32,7 +32,7 @@ class TasksScreen : AppCompatActivity() {
                             projectName.text = document.data["Project Name"].toString()
                             taskName.text = document.data["Task Name"].toString()
                             dueDate.text = document.data["Due Date"].toString()
-                            //addNotes.text =
+                            addNotes.text = document.data["Task Notes"].toString()
                         }
                     }
                 }

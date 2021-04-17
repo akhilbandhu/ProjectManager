@@ -32,7 +32,7 @@ class ProjectSetupScreen : AppCompatActivity() {
         addProjectB.setOnClickListener(){
             val project: MutableMap<String, Any?> = HashMap()
             project["name"] = projectNameET.text.toString()
-            project["projected completion"] = projectedCompletionDateET.text.toString()
+            project["projected completion"] = projectedCompletionDateET.text
             project["date created"] = Date().toString()
             project["created by"] = auth.uid.toString()
             //project["members"] = membersList

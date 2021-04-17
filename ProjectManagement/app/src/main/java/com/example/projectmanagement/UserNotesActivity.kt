@@ -15,6 +15,7 @@ class UserNotesActivity : AppCompatActivity() {
         var addNotesBtn = findViewById<Button>(R.id.addNotesBtn)
         var userNotes = findViewById<EditText>(R.id.notes)
         var db = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
         //we will need the current user id to store and access the notes
         //this can be done with the auth object
         var currentUserID = auth.uid.toString()

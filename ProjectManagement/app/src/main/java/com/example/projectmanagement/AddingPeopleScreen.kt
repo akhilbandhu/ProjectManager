@@ -11,18 +11,16 @@ class AddingPeopleScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_adding_people_screen)
-
         var member = findViewById<EditText>(R.id.name)
-        var membersList = ArrayList<String?>()
         var addBtn = findViewById<Button>(R.id.addPeople)
+        var membersList = ArrayList<String?>()
         var backBtn = findViewById<Button>(R.id.back)
 
-        // adding owner first to members
         membersList.add("ME")
-
         addBtn.setOnClickListener {
-            if (member.text.isNotEmpty()){
+        // adding owner first to members
                 membersList.add(member.text.toString())
+            if (member.text.isNotEmpty()){
                 Toast.makeText(this, member.text.toString()+" added to project", Toast.LENGTH_SHORT).show()
             }
         }
