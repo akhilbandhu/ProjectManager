@@ -28,9 +28,10 @@ class ActualProjectScreen : AppCompatActivity() {
 
         var addTsk = findViewById<Button>(R.id.addingTask)
         addTsk.setOnClickListener {
-            var newIntent = Intent(this, AddingTaskScreen::class.java)
-            newIntent.putExtra("Project Title", projectTitle.text.toString())
-            startActivity(newIntent)
+            var newTaskIntent = Intent(this, AddingTaskScreen::class.java)
+            newTaskIntent.putExtra("Project Title", projectTitle.text.toString())
+            newTaskIntent.putExtra("Project Document", projectDocumentID)
+            startActivity(newTaskIntent)
         }
 
         var taskList = findViewById<ListView>(R.id.taskList)
@@ -62,7 +63,8 @@ class ActualProjectScreen : AppCompatActivity() {
                             var intent = Intent(this, TasksScreen::class.java)
                             intent.putExtra("Task Name", listOfElements[position])
                             intent.putExtra("Project Title", text)
-                            intent.putExtra("Document ID", listOfDocuments[position])
+                            intent.putExtra("Task Document", listOfDocuments[position])
+                            intent.putExtra("Project Document", projectDocumentID)
                             intent.putExtra("Members", membersList)
                             startActivity(intent)
                         }

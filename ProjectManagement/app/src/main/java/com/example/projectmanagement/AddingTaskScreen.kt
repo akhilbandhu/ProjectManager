@@ -1,5 +1,6 @@
 package com.example.projectmanagement
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,7 +26,7 @@ class AddingTaskScreen : AppCompatActivity() {
         var db = FirebaseFirestore.getInstance()
         var projectTitle = findViewById<TextView>(R.id.projectName)
         projectTitle.text = intent.getStringExtra("Project Title")
-        var documentID = intent.getStringExtra("Document ID")
+        var documentID = intent.getStringExtra("Project Document")
 
         var addTask = findViewById<Button>(R.id.addTask)
         var tskName = findViewById<EditText>(R.id.taskName)
@@ -45,7 +46,7 @@ class AddingTaskScreen : AppCompatActivity() {
                 db.collection("Projects").document(documentID).collection("Tasks").add(task)
                     .addOnCompleteListener {
                         Toast.makeText(this, "Task was added", Toast.LENGTH_SHORT).show()
-                        finish()
+                        startActivity(Intent(this, MyProjectsScreen::class.java))
                     }
             }
         }
