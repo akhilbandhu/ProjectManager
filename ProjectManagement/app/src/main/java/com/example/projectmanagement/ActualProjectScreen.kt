@@ -38,32 +38,34 @@ class ActualProjectScreen : AppCompatActivity() {
         var listOfDocuments = ArrayList<String?>()
 
 
-        db.collection("Projects").get().addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                for (document in task.result!!) {
-                    //if (document.data["created by"].toString() == myID) {
-                    var taskName = document.data["Task Name"].toString()
-                    listOfElements.add(taskName)
-                    listOfDocuments.add(document.id.toString())
-                    // adapter
-                    var listAdapter: ArrayAdapter<String?> = ArrayAdapter(
+        db.collection("Projects").get().addOnCompleteListener { it ->
+            if (it.isSuccessful) {
+                db.collection("Tasks").get().addOnCompleteListener() { task ->
+                    for (document in task.result!!) {
+                        //if (document.data["created by"].toString() == myID) {
+                        var taskName = document.data["Task Name"].toString()
+                        listOfElements.add(taskName)
+                        listOfDocuments.add(document.id.toString())
+                        // adapter
+                        var listAdapter: ArrayAdapter<String?> = ArrayAdapter(
                             this,
                             android.R.layout.simple_expandable_list_item_1,
                             listOfElements
-                    )
-                    taskList.adapter = listAdapter
-                    taskList.setOnItemClickListener { parent, view, position, id ->
-                        Toast.makeText(
+                        )
+                        taskList.adapter = listAdapter
+                        taskList.setOnItemClickListener { parent, view, position, id ->
+                            Toast.makeText(
                                 this,
                                 listOfElements[position],
                                 Toast.LENGTH_LONG
-                        ).show()
-                        var intent = Intent(this, TasksScreen::class.java)
-                        intent.putExtra("Task Name", listOfElements[position])
-                        intent.putExtra("Project Title", text)
-                        intent.putExtra("Document ID", listOfDocuments[position])
-                        intent.putExtra("Members", membersList)
-                        startActivity(intent)
+                            ).show()
+                            var intent = Intent(this, TasksScreen::class.java)
+                            intent.putExtra("Task Name", listOfElements[position])
+                            intent.putExtra("Project Title", text)
+                            intent.putExtra("Document ID", listOfDocuments[position])
+                            intent.putExtra("Members", membersList)
+                            startActivity(intent)
+                        }
                     }
                 }
             }

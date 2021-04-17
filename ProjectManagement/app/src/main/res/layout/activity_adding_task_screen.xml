@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".AddingTaskScreen">
 
+    <EditText
+        android:id="@+id/taskNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Task Notes"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate"
+        app:layout_constraintVertical_bias="0.361" />
+
     <TextView
         android:id="@+id/addingTaskTitle"
         android:layout_width="wrap_content"
@@ -28,10 +42,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.371" />
 
     <EditText
         android:id="@+id/dueDate"
@@ -45,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startDate"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
         android:id="@+id/startDate"
@@ -59,7 +73,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskName"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <TextView
         android:id="@+id/projectName"
