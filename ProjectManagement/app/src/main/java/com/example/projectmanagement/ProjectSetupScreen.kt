@@ -27,7 +27,6 @@ class ProjectSetupScreen : AppCompatActivity() {
         var db = FirebaseFirestore.getInstance()
 
 
-        //we want to get the projected completion date and put it on the calendar
 
         addProjectB.setOnClickListener(){
             val project: MutableMap<String, Any?> = HashMap()
@@ -35,14 +34,11 @@ class ProjectSetupScreen : AppCompatActivity() {
             project["projected completion"] = projectedCompletionDateET.text.toString()
             project["date created"] = Date().toString()
             project["created by"] = auth.uid.toString()
-            //project["members"] = membersList
-            //this will take us back to the home screen
-            //we want to pass the date to the home screen
-            //then pass it to the calendar
+            project["members"] = membersList
             db.collection("Projects").add(project)
                 .addOnCompleteListener {
                     Toast.makeText(this, "Project was added", Toast.LENGTH_SHORT).show()
-                    finish()
+                    startActivity(Intent(this, HomeScreen::class.java))
                 }
         }
 

@@ -1,18 +1,14 @@
 package com.example.projectmanagement
 
 import android.graphics.Color
-import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
+import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import com.github.sundeepk.compactcalendarview.CompactCalendarView
-import com.github.sundeepk.compactcalendarview.CompactCalendarView.CompactCalendarViewListener
 import com.github.sundeepk.compactcalendarview.domain.Event
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import java.text.SimpleDateFormat
-import java.util.*
 
 //maybe this works!
 class CalendarActivity : AppCompatActivity() {
