@@ -1709,6 +1709,7 @@ id shortcut
 id showCustom
 id showHome
 id showNotesBtn
+id showReport
 id showTaskNotes
 id showTitle
 id signUpButtonLoginPage
