@@ -27,9 +27,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeTitle"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <Button
         android:id="@+id/setupBtn"
@@ -39,9 +40,33 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myProjectsBtn"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/myCalendar"
+        android:layout_width="373dp"
+        android:layout_height="121dp"
+        android:text="Calendar"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myProjectsBtn"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <Button
+        android:id="@+id/notesUser"
+        android:layout_width="373dp"
+        android:layout_height="121dp"
+        android:text="User Notes"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myProjectsBtn"
+        app:layout_constraintVertical_bias="0.425" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

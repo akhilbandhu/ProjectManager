@@ -13,6 +13,8 @@ class HomeScreen : AppCompatActivity() {
 
         var myProjects = findViewById<Button>(R.id.myProjectsBtn)
         var setUpBtn = findViewById<Button>(R.id.setupBtn)
+        var notes = findViewById<Button>(R.id.notesUser)
+        var calendar = findViewById<Button>(R.id.myCalendar)
 
         myProjects.setOnClickListener(){
             startActivity(Intent(this, MyProjectsScreen::class.java))
@@ -20,6 +22,12 @@ class HomeScreen : AppCompatActivity() {
 
         setUpBtn.setOnClickListener(){
             startActivity(Intent(this, ProjectSetupScreen::class.java))
+        }
+        notes.setOnClickListener(){
+            startActivity(Intent(this, UserNotesActivity::class.java))
+        }
+        calendar.setOnClickListener(){
+            startActivity(Intent(this, CalendarActivity::class.java))
         }
 
     }
