@@ -34,13 +34,25 @@
 
     <Button
         android:id="@+id/submitBtn"
-        android:layout_width="188dp"
-        android:layout_height="82dp"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
         android:text="Submit Report"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintVertical_bias="0.854" />
+
+    <Button
+        android:id="@+id/showReport"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:text="Show Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
 </androidx.constraintlayout.widget.ConstraintLayout>
