@@ -1442,6 +1442,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id ReportTitle
 id SHIFT
 id SYM
 id TOP_END
@@ -1574,6 +1575,7 @@ id fill_large_indicator
 id fill_vertical
 id filled
 id filter_chip
+id finishTask
 id fitToContents
 id fixed
 id forever
@@ -1606,6 +1608,7 @@ id list_item
 id logInButton
 id loginpwd
 id masked
+id memberMenu
 id message
 id middle
 id mini
@@ -1636,18 +1639,19 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id myCalendarBtn
+id myCalendar
 id myProjectsBtn
 id myProjectsTitle
 id name
 id navigation_header_container
 id never
+id next_button
 id noScroll
 id no_fill_large_indicator
 id none
 id normal
 id notes
-id notesBtn
+id notesUser
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1663,6 +1667,7 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id prev_button
 id progress_circular
 id progress_horizontal
 id projectList
@@ -1672,6 +1677,7 @@ id projectTitle
 id projectTitleTask
 id projectedDate
 id radio
+id report
 id right
 id right_icon
 id right_side
@@ -1729,6 +1735,7 @@ id start
 id startDate
 id stretch
 id submenuarrow
+id submitBtn
 id submit_area
 id tabMode
 id tag_accessibility_actions
@@ -1850,6 +1857,7 @@ layout activity_main
 layout activity_my_projects_screen
 layout activity_project_setup_screen
 layout activity_sign_up
+layout activity_task_report
 layout activity_tasks_screen
 layout activity_user_notes
 layout custom_dialog
