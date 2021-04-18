@@ -24,8 +24,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProjectManagement" >
+        <activity android:name="com.example.projectmanagement.TaskReportActivity" />
         <activity android:name="com.example.projectmanagement.CalendarActivity" />
         <activity android:name="com.example.projectmanagement.UserNotesActivity" />
+        <activity android:name="com.example.projectmanagement.TasksScreen" />
         <activity android:name="com.example.projectmanagement.AddingPeopleScreen" />
         <activity android:name="com.example.projectmanagement.SignUpActivity" />
         <activity android:name="com.example.projectmanagement.HomeScreen" />

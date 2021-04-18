@@ -88,6 +88,10 @@
         "source": "/Users/Golf/AndroidStudioProjects/ProjectManager/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/Golf/AndroidStudioProjects/ProjectManager/ProjectManagement/app/build/intermediates/res/merged/debug/layout_activity_task_report.xml.flat",
+        "source": "/Users/Golf/AndroidStudioProjects/ProjectManager/ProjectManagement/app/src/main/res/layout/activity_task_report.xml"
+    },
+    {
         "merged": "/Users/Golf/AndroidStudioProjects/ProjectManager/ProjectManagement/app/build/intermediates/res/merged/debug/layout_activity_project_setup_screen.xml.flat",
         "source": "/Users/Golf/AndroidStudioProjects/ProjectManager/ProjectManagement/app/src/main/res/layout/activity_project_setup_screen.xml"
     },

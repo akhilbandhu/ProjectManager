@@ -9,6 +9,6 @@ class TaskReportActivity : AppCompatActivity() {
         setContentView(R.layout.activity_task_report)
 
         //there will be a quite a few things that come in here
-        
+
     }
 }
