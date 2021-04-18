@@ -1,8 +1,9 @@
 package com.example.projectmanagement
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -23,6 +24,7 @@ class TasksScreen : AppCompatActivity() {
         var dueDate = findViewById<TextView>(R.id.dueDateTask)
         var addNotes = findViewById<TextView>(R.id.showTaskNotes)
         var projectDocumentID = intent.getStringExtra("Project Document")
+        var taskFinishedBtn = findViewById<Button>(R.id.finishTask)
 
         if (projectDocumentID != null) {
             db.collection("Projects").document(projectDocumentID).collection("Tasks").get().addOnCompleteListener { task ->
@@ -38,5 +40,11 @@ class TasksScreen : AppCompatActivity() {
                 }
             }
         }
+
+        //need to have a finish task button which leads to a task report page
+        taskFinishedBtn.setOnClickListener {
+            startActivity(Intent(this, TaskReportActivity::class.java))
+        }
+
     }
 }

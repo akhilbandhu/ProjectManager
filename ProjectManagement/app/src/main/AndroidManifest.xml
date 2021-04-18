@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectManagement">
-        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".TaskReportActivity"></activity>
+        <activity android:name=".CalendarActivity" />
         <activity android:name=".UserNotesActivity" />
+        <activity android:name=".TasksScreen" />
         <activity android:name=".AddingPeopleScreen" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".HomeScreen" />
