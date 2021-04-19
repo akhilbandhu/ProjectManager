@@ -36,7 +36,7 @@ class AddingTaskScreen : AppCompatActivity() {
 
         // adding members from firestore project to local array variable
         var membersList = ArrayList<String?>()
-        membersList.add("TrialRun")
+        membersList.add("Select Member")
         documentID?.let {
             db.collection("Projects").document(documentID).get().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
@@ -45,9 +45,9 @@ class AddingTaskScreen : AppCompatActivity() {
                         projectDocument?.getData() as Map<String, Any>
                     for ((key, value) in map) {
                         if (key == "members") {
-                            Log.d("TAG", value.toString())
-                            // LOOK AT THIS PART - I need to add individual members to membersList not the whole list
-                            membersList.add(value.toString()) // gives me "[word, word]"
+                            for(n in value as ArrayList<String?>){
+                                membersList.add(n)
+                            }
                         }
                     }
                 }
@@ -73,6 +73,7 @@ class AddingTaskScreen : AppCompatActivity() {
             task["Start Date"] = startDate.text.toString()
             task["Due Date"] = dueDate.text.toString()
             task["Task Notes"] = taskNotes.text.toString()
+            task["Assigned Member"] = assignMenu.selectedItem.toString()
             if (documentID != null) {
                 db.collection("Projects").document(documentID).collection("Tasks").add(task)
                     .addOnCompleteListener {
