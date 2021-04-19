@@ -34,7 +34,7 @@ class ProjectSetupScreen : AppCompatActivity() {
             project["projected completion"] = projectedCompletionDateET.text.toString()
             project["date created"] = Date().toString()
             project["created by"] = auth.uid.toString()
-//            project["members"] = membersList
+            project["members"] = membersList
             db.collection("Projects").add(project)
                 .addOnCompleteListener {
                     Toast.makeText(this, "Project was added", Toast.LENGTH_SHORT).show()
